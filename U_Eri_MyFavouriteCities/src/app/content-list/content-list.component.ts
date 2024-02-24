@@ -4,11 +4,12 @@ import { Content } from '../helper-files/content-interface';
 import { ContentCardComponent } from '../content-card/content-card.component';
 import { TypefilterPipe } from '../typefilter.pipe';
 import { FormsModule } from '@angular/forms';
+import { HoverAffectDirective } from '../hover-affect.directive';
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [CommonModule, ContentCardComponent, TypefilterPipe, FormsModule],
+  imports: [CommonModule, ContentCardComponent, TypefilterPipe, FormsModule, HoverAffectDirective],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })
@@ -37,7 +38,7 @@ export class ContentListComponent implements OnInit {
         title: "Ahmedabad",
         description:"Heritage City located in Gujarat India.",
         creator:"Ahemad Shah",
-        imgURL:"https://img.freepik.com/free-vector/colorful-ahmedabad-skyline_23-2148660023.jpg?size=626&ext=jpg",
+        imgURL:"",
         type:"Urban",
         tags: ["Heritage", "metropolian"]
       },
